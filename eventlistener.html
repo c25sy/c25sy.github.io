@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.rvp{
+			width: 200px;
+			height: 200px;
+			background-image: url(rvp.jpeg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			display: inline-grid;
+
+
+
+		}
+
+
+
+
+
+	</style>
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+	
+document.addEventListener("click", function() {
+	var square = document.createElement("div")
+	var x = event.clientX
+	var y = event.clientY
+	square.style.left = x - 100 + 'px';
+	square.style.top = y - 100+ 'px';
+	square.style.position = 'absolute';
+	document.body.appendChild(square)
+
+	square.classList.add('rvp')
+}
+
+)
+
+
+
+
+	
+
+</script>
+
+</body>
+</html>
