@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>{
+            font-family: courier;
+            font-size:;
+        }
+        #first{
+            left: 110px;
+            top: 10px;
+            position: absolute;
+        }
+        #second{
+            left: 390px;
+            top: 10px;
+            position: absolute;
+        }
+        #third{
+            left: 670px;
+            top: 10px;
+            position: absolute;
+        }
+        #fourth{
+            left: 950px;
+            top: 10px;
+            position: absolute;
+        }
+        #fifth{
+            left: 1220px;
+            top: 10px;
+            position: absolute;
+        }
+        #sixth{
+            left: 110px;
+            top: 330px;
+            position: absolute;
+        }
+        #seventh{
+            left: 390px;
+            top: 330px;
+            position: absolute;
+        }
+        #eighth{
+            left: 670px;
+            top: 330px;
+            position: absolute;
+        }
+        #ninth{
+            left: 950px;
+            top: 330px;
+            position: absolute;
+        }
+        #tenth{
+            left: 1220px;
+            top: 330px;
+            position: absolute;
+        }
+        #eleventh{
+            left: 110px;
+            top: 645px;
+            position: absolute;
+        }
+        #twelth{
+            left: 390px;
+            top: 645px;
+            position: absolute;
+        }
+        #thirteenth{
+            left: 670px;
+            top: 645px;
+            position: absolute;
+        }
+        #fourteenth{
+            left: 950px;
+            top: 645px;
+            position: absolute;
+        }
+        #fifteenth{
+            left: 1220px;
+            top: 645px;
+            position: absolute;
+        }
+        #sixteenth{
+            left: 110px;
+            top: 970px;
+            position: absolute;
+        }
+        #seventeenth{
+            left: 390px;
+            top: 970px;
+            position: absolute;
+        }
+        #eighteenth{
+            left: 670px;
+            top: 970px;
+            position: absolute;
+        }
+        #nineteenth{
+            left: 950px;
+            top: 970px;
+            position: absolute;
+        }
+        #twentieth{
+            left: 1220px;
+            top: 970px;
+            position: absolute;
+        }
+          #twentyfirst{
+            left: 110px;
+            top: 1290px;
+            position: absolute;
+        }
+        #twentysecond{
+            left: 390px;
+            top: 1290px;
+            position: absolute;
+        }
+        #twentythird{
+            left: 670px;
+            top: 1290px;
+            position: absolute;
+        }
+        #twentyfourth{
+            left: 950px;
+            top: 1290px;
+            position: absolute;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<a href="alonso.html"><div id="first">Gameweek 1</div></a>
+<a href="tsimikas.html"><div id="second">Gameweek 2</div></a>
+<a href="antonio.html"><div id="third">Gameweek 3</div></a>
+<a href="ronaldo.html"><div id="fourth">Gameweek 4</div></a>
+<a href="sarr.html"><div id="fifth">Gameweek 5</div></a>
+<a href="raphinha.html"><div id="sixth">Gameweek 6</div></a>
+<a href="jimenez.html"><div id="seventh">Gameweek 7</div></a>
+<a href="azpilicueta.html"><div id="eighth">Gameweek 8</div></a>
+<a href="foden.html"><div id="ninth">Gameweek 9</div></a>
+<a href="livramento.html"><div id="tenth">Gameweek 10</div></a>
+<a href="white.html"><div id="eleventh">Gameweek 11</div></a>
+<a href="foster.html"><div id="twelth">Gameweek 12</div></a>
+<a href="jota.html"><div id="thirteenth">Gameweek 13</div></a>
+<a href="salah.html"><div id="fourteenth">Gameweek 14</div></a>
+<a href="mbeumo.html"><div id="fifteenth">Gameweek 15</div></a>
+<a href="alexanderarnold.html"><div id="sixteenth">Gameweek 16</div></a>
+<a href="james.html"><div id="seventeenth">Gameweek 17</div></a>
+<a href="cancelo.html"><div id="eighteenth">Gameweek 18</div></a>
+<a href="sanchez.html"><div id="nineteenth">Gameweek 19</div></a>
+<a href="dennis.html"><div id="twentieth">Gameweek 20</div></a>
+<a href="bowen.html"><div id="twentyfirst">Gameweek 21</div></a>
+<a href="fernandes.html"><div id="twentysecond">Gameweek 22</div></a>
+<a href="dalot.html"><div id="twentythird">Gameweek 23</div></a>
+<a href="foster.html"><div id="twentyfourth">Gameweek 24</div></a>
+
+<div></div>
+<p></p>
+<a></a>
+<script type="text/javascript">
+
+    function makeSquare (x) {
+
+            var square = document.createElement('div');
+                        document.body.appendChild(square);
+                        // square.style.backgroundColor="red";
+            square.style.width = "260px";
+            square.style.height = "300px";
+            square.style.color = "black";
+            square.style.display = "inline-block";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "1px";
+            square.style.backgroundImage = "url("+ x +".jpg)"
+
+            square.style.backgroundSize = "contain";
+            square.style.id = "square" + x;;
+            // square.innerText=x;
+            square.style.textAlign="center";
+
+            // var link = document.createElement("a");
+            // square.appendChild(link);
+            // link.href= x + ".html";
+            // link.innerText = "gameweek" + x
+            // link.style.color = "black";
+            // link.style.textDecoration = "none";
+            // link.style.position="relative";
+            // link.style.top = "-8px";
+
+
+        }
+
+    for (var i = 1; i < 39; i++) 
+    { makeSquare(i);}
+</script>
+</body>
+</html></html>

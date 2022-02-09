@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css"></style>
+<script type="text/javascript">
+	function makeChange () {
+		var change = document.createElement("div")
+		document.body.appendChild(change);
+		
+			change.style.height = "200px";
+			change.style.width = "200px";
+			change.style.backgroundImage = "url(click.jpg)";
+			change.style.display ="inline-block";
+			
+			change.style.backgroundSize = "cover";
+			change.addEventListener("click", function (){
+			change.style.backgroundImage = "url(second.jpg)";
+		})
+		
+}
+setInterval(makeChange, 1000);
+</script>
+<div></div>
+</body>
+</html></html>
