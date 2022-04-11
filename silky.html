@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#toure{
+			background-image: url(toure.jpg);
+			width: 750px;
+			height: 750px;
+			position: absolute;
+			left: 370px;
+			background-repeat: no-repeat;
+		}
+
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var names = ["Muhammad", "Mohammed", "Mohammad", "Muhammed", "Mohamed", "Mohamad", "Muhamad", "Muhamed", "Mohamud", "Mohummad", "Mohummed", "Mouhamed", "Mohammod", "Mouhamad", "Mo"]
+
+var x = 0;
+document.addEventListener("click", function(){
+console.log(names[x])
+x = x + 1;
+
+if(x>14) {
+	x=0
+}
+})
+
+</script>
+<div id="toure"></div>
+</body>
+</html>

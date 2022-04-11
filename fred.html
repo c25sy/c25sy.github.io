@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+    html {
+        background-color: black;
+    }
+    .fredinho {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        position: relative;
+        margin: 20px;
+        display: inline-block;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        transition: 1.5s;
+        color: white;
+    }
+    .pic {
+        background-image: url("https://resources.premierleague.com/premierleague/photos/players/250x250/p101582.png");
+    }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+    function Mcfred(i) {
+        var fred = document.createElement("fredinho");
+        document.body.appendChild(fred);
+        fred.classList.add("fredinho");
+        fred.classList.add("pic");
+        document.body.appendChild(fred);
+        fred.addEventListener("click", function() {
+            function remove() {
+                fred.classList.remove("pic");
+                fred.innerHTML = array[i];
+            };
+            function add() {
+                fred.classList.add("pic");
+                fred.innerHTML = "";
+            }
+            remove();
+            setTimeout(add, 2000)
+            console.log(event);
+        });
+        function move() {
+            fred.style.left = Math.round(Math.random() * 280) + "px";
+            fred.style.top = Math.round(Math.random() * 240) +100 + "px";
+        };
+        setTimeout(move, 1);
+        setInterval(move, 150);
+    };
+    var array = ["you are a hard worker",
+        "you have a great attitude",
+        "you are respectful",
+        "you are talented",
+        "you inspire me",
+        "you are a fan-favorite",
+        "you are a legend in the making",
+        "you are an exciting player"
+    ];
+    for (var i = 0; i <= array.length - 1; i++) {
+        Mcfred(i);
+    }
+    </script>
+</body>
+</html>

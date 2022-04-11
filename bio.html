@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ball</title>
+	<style>
+	body{
+		background-color: black;
+	}
+
+		#arm{
+		width: 600px;
+		height: 600px;
+		background-image: url(arm.jpg.png);
+		background-size: cover;
+		position: absolute;
+		animation-name: slide;
+		animation-duration: 60s;
+		animation-iteration-count: 2s; 
+	}
+
+		#vaccine{
+		width: 600px;
+		height: 600px;
+		background-image: url(vaccine.png);
+		background-size: cover;
+		position: absolute;
+		animation-name: moving;
+		animation-duration: 60s;
+		animation-iteration-count: 2s;
+		}
+
+		@keyframes slide{
+			0%{
+				left: 49%;
+				top: 25%;
+			}
+			5%{
+				left: 49%;
+				top: 25%;
+			}
+			6%{
+				left: 100%;
+				top: 100%;
+			}
+		}
+
+
+		@keyframes moving{
+			0%{
+				left: 50%;
+				top: 10%;
+			}
+			5%{
+				left: 45%;
+				top: 12%;
+			}
+			7%{
+				left: 100%;
+				top: 100%;
+			}
+		}
+
+		
+
+	</style>
+</head>
+<body>
+<div id="vaccine"></div>
+<div id="arm"></div>
+</body>
+</html>

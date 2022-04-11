@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .kante{
+        	left:1000px;
+        	top:800px;
+        	background-size:contain;
+			width:300px;
+			height:300px;
+			background-image:url(kante2.jpg);
+			transition:.25s;
+			background-position:center;
+			background-repeat: no-repeat;
+			position:absolute;
+/*this is the style section, determining the image that the function will alter.*/
+
+		}
+	</style>
+</head>
+
+<body>
+    <p>miles ran:</p><input id="input"></input>
+<!-- this is the scoreboard -->
+    <script type="text/javascript">
+    var input = document.getElementById('input');
+        var x = 0;
+
+    function createRun() {
+        var run = document.createElement('div');
+        document.body.appendChild(run);
+        run.classList.add("kante");
+// now I have given an ID and the image will continue repeating
+        function changePosition() {
+            run.style.left = 1000 * Math.random() + "px";
+            run.style.top = 1000 * Math.random() + "px";
+
+        };
+
+        run.addEventListener("click", function() {
+            console.log("hi");
+            x = x + 1;
+            input.value = x;
+            run.classList.remove("kante");
+// this is saying each time I click the image will disappear, and the score will update each time I click
+        })
+        setInterval(changePosition, 2000)
+    };
+    setInterval(createRun, 1000);
+    // this is the timing, how often the function runs, and how long to change position
+    </script>
+</body>
+</html>
