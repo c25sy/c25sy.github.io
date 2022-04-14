@@ -5,7 +5,7 @@
 
 	<style type="text/css">
 	body{
-		background-color: lightblue;
+		background-color: black;
 	}
 	#tab {
 
@@ -14,6 +14,7 @@
 		border: 0px;
 		font-size: 16px;
 		position: relative;
+		color: white;
 	}
 	.intro {
 		font-size: 30px;
@@ -32,8 +33,11 @@ Press a number or letter to find out what I am thankful for!
 
 	<script type="text/javascript">
 		document.addEventListener("keypress",
-			function(event){var square = document.createElement('div');
+			function(event){
+			var square = document.createElement('div');
 			document.body.appendChild(square);
+			square.style.color = "white";
+			square.style.fontSize = "20px"
 
 			if(event.key == "1") {
 				square.innerText = "I am thankful for access to technology.";

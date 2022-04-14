@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,33 +7,45 @@
 	<style type="text/css">
 
 	body{
-		background-color: lightblue;
+		background-color: black;
 		background-repeat: no-repeat;
 	}
 
 	#rvp{
 		width: 300px;
 		height: 300px;
-		left: 10px;
-		top: 600px;
-		background-image: url(rvp.jpeg);
+		background-image: url(ronaldinho.png);
 		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		top: 250px;
+		right: 50px;
 		}
-a{
-	color:black;
-}
+
+	#sancho{
+		width: 300px;
+		height: 300px;
+		background-image: url(sancho.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		top: 220px;
+		left: 50px;
+	}
+
 	.name{
 		width: 32%;
 		height: 100px;
 		font-size: 40px;
 	position: relative;
 	display: inline-block;
+	color: white;
 
 	}
 
 
 	.name:hover{
-		color: black;
+		color: gray;
 		transition: .5s;
 	}
 
@@ -42,6 +55,7 @@ a{
 		font-size: 50px;
 	position: relative;
 	top: 120px;
+	color: white;
 	}
 
 	#story{
@@ -50,7 +64,7 @@ a{
 		font-size: 22px;
 		position: relative;
 		bottom: 80px;
-		color: black;
+		color: white;
 	}
 
 
@@ -59,12 +73,13 @@ a{
 </head>
 <body>
 	<div id="rvp"></div>
+	<div id="sancho"></div>
 	<center>
 	<a href="index.html"><div id="home" class="name">HOME</div></a>
 	<a href="Projects.html"><div id="projects" class="name">PROJECTS</div></a>
 	<a href="Journal.html"><div id="journal" class="name">JOURNAL</div>	</a>
 	<div id="aboutme">ABOUT ME</div>
-	<div id="story">Hello I am Sebastian Yeoh and welcome to my website! I am in the 9th grade, and this is my first time taking computer science. Outside of school, my favorite hobby is to play soccer. Feel free to look through my website for some cool projects, and my journal entries. Enjoy!!	</div>
+	<div id="story">Hello and welcome to my website! I am in the 9th grade, and this is my first time taking computer science. Outside of school, my favorite hobby is to play soccer. Feel free to look through my website for some cool projects, and my journal entries. Enjoy!!	</div>
 	</center>
 
 
