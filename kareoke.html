@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	.text{
+		font-size: 30px;
+		opacity: 0%;
+}
+	.space{
+		color: white;
+	}
+
+
+</style>
+	<title></title>
+</head>
+<body>
+
+<audio id="sound" src="Barbie2.mov"></audio>
+
+<div class="text">Happy Birthday to You</div>
+<div class="space"> a </div>
+<div class="text">Happy Birthday to You!</div>
+<div class="space"> a </div>
+<div class="text">Happy Birthday to Dear One</div>
+<div class="space"> a </div>
+<div class="text">Happy Birthday to You!</div>
+<script type="text/javascript">
+	
+	var song = document.getElementById('sound');
+
+	//this is where we create a variable called text and we set it equal to every div with the class of text. But that's a problem becuase it returns an "html collection" instead of the divs themselves"//
+	var text = document.getElementsByClassName('text')
+
+	//this is where we convert it to an actual list or what's called an array instead of an HTML collection//
+	text = Array.from(text)
+
+	document.addEventListener("click", function() {
+//for each is a funciton you can use on arrays and any function you put inside the forEach function applies to each element in teh array. The input of the forEach function refers to each element of the array//
+		text.forEach(function(elementInArray){
+			
+		elementInArray.style.opacity = "1";
+
+			// setInterval(showElements, 1000)
+
+		})
+		song.play()
+		console.log(text)
+
+	})
+
+
+</script>
+
+
+</body>
+</html>
